@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./thing.js" defer></script>
+</head>
+
+<body>
+    <h1>
+        Sap to syrup time and quantity calculator
+    </h1>
+
+    <section>
+        <label for="init_volume">Initial Volume (L)</label>
+        <input type="number" id="init_volume" step="0.01">
+        <label for="init_perc_sugar">Initial sugar %</label>
+        <input type="number" id="init_perc_sugar" step="0.01">
+        <label for="final_perc_sugar">Final sugar %</label>
+        <input type="number" id="final_perc_sugar" step="0.01">
+        <label for="evaporation_rate">Evaporation rate (L/min)</label>
+        <input type="number" id="evaporation_rate" step="0.01">
+
+        <input type="button" value="Calculate" id="calc_button">
+        <input type="button" value="Default values" id="default_button">
+    </section>
+
+    <section>
+        <label for="volume_final" id="volume_final_label"></label>
+        <input type="text" disabled id="volume_final">
+        <label for=" time_taken">Boil time required</label>
+        <input type="text" disabled id="time_taken">
+    </section>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>% Sugar</th>
+                <th>Volume (L)</th>
+                <th>Time left to boil</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+        </tbody>
+    </table>
+</body>
+
+</html>
