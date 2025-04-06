@@ -18,7 +18,7 @@ function set_default_values() {
     init_volume_e.value = 100;
     init_perc_sugar_e.value = "7.00";
     final_perc_sugar_e.value = "67.00";
-    evaporation_rate_e.value = "0.35";
+    evaporation_rate_e.value = "0.30";
 }
 
 function update_table() {
